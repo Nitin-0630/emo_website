@@ -12,15 +12,23 @@
   </style>
   </head>
   <body>
-    <!--login section-->
+    <script>
+function login() {
+    var user = document.getElementById("username").value;
+    var pass = document.getElementById("password").value;
+
+    if(user === "admin" && pass === "1234") {
+        alert("Login successful");
+        document.getElementById("maincontent").style.display = "block";
+        document.getElementById("login page").style.display = "none";
+    } else {
+        alert("Wrong username or password");
+    }
+}
+</script>
   
 
-  <div id="login page">
-    <h2>Login</h2>
-  <input type="text" id="username" placeholder="username"><br><br>
-  <input type="password" id="password" placeholder="password"><br><br>
-  <button onclick="login()">login</button> 
-  </div>
+  
     <a href="mailto:bubca010@gmail.com"> send email</a><br>
     <a href="https://wa.me/917876022279"> chat on whatsapp</a>
     
